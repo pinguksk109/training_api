@@ -39,10 +39,11 @@
 			<scope>test</scope>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/com.google.api-client/google-api-client -->
+		<!-- https://mvnrepository.com/artifact/com.google.api-client/google-api-client -->
 		<dependency>
 		    <groupId>com.google.api-client</groupId>
 		    <artifactId>google-api-client</artifactId>
-		    <version>2.2.0</version>
+		    <version>2.4.0</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.mock-server/mockserver-netty -->
 		<dependency>
@@ -87,8 +88,6 @@
 		    <artifactId>jaxb-api</artifactId>
 		    <version>2.3.1</version>
 		</dependency>
-
-
 
 	</dependencies>
 
