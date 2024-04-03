@@ -11,3 +11,9 @@ services:
       - ./data:/data
     ports:
       - "3000:3000"
+
+  sqs:
+    image: softwaremill/elasticmq
+    container_name: cdirrccpt.sqs
+    ports:
+      - 53218:9324
