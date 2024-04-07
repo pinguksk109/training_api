@@ -1,11 +1,11 @@
-package com.ot.training.application;
+package com.ot.training.application.service;
 
 import java.io.IOException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.ot.training.application.response.KeywordDto;
 import com.ot.training.exception.ApiResponseException;
-import com.ot.training.infrastructure.KeywordRepository;
+import com.ot.training.infrastructure.repository.KeywordRepository;
 import com.ot.training.infrastructure.response.KeywordResponse;
 
 @Service
@@ -15,7 +15,7 @@ public class KeywordService {
   private KeywordRepository keywordRepository;
   
   // TODO: Loggerを適用したい
-  //  private static final Logger LOGGER = LoggerFactory.getLogger(KeywordService.class);
+//    private static final Logger LOGGER = LoggerFactory.getLogger(KeywordService.class);
   
   public KeywordDto getKeyword() throws IOException, ApiResponseException {
     try {

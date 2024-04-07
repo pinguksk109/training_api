@@ -1,4 +1,4 @@
-package com.ot.training.infrastructure;
+package com.ot.training.infrastructure.repository;
 
 import java.io.IOException;
 import org.springframework.http.HttpStatus;
