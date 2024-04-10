@@ -15,6 +15,7 @@ public class KeywordCoordinator {
     
     // TODO 後で作り変える いったんそのまま返す
     KeywordDto keywordDto = keywordService.getKeyword();
+    return null;
     
     // 取得したキーワードのメッセージを送る
     // まとめてキーワードをServiceに送る

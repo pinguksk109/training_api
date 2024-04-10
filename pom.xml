@@ -99,6 +99,13 @@
 		    <artifactId>aws-java-sdk-sqs</artifactId>
 		    <version>1.12.693</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk -->
+		<dependency>
+		    <groupId>com.amazonaws</groupId>
+		    <artifactId>aws-java-sdk</artifactId>
+		    <version>1.0.12</version>
+		</dependency>
+
 
 
 

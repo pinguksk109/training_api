@@ -8,10 +8,10 @@ import org.mockito.MockitoAnnotations;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 @ExtendWith(MockitoExtension.class)
-class S3RepositoryTest extends S3Repository {
+class SqsRepositoryTest extends SqsRepository {
   
   @InjectMocks
-  private S3Repository sut;
+  private SqsRepository sut;
   
   @BeforeEach
   public void setUp() {
@@ -20,7 +20,7 @@ class S3RepositoryTest extends S3Repository {
   
   @Test
   void sendMessage_メッセージを送信できること() {
-    QueueMessageRequest request = new QueueMessageRequest("カメラ", "2024-01-01", "2024-01-31");
+    QueueMessageRequest request = new QueueMessageRequest("lumix", "2024-01-01", "2024-01-31");
     try {
       sut.sendMessage(request);
     } catch(Exception e) {

@@ -1,0 +1,5 @@
+{"properties": [{
+  "name": "sqs.endpoint",
+  "type": "java.lang.String",
+  "description": "A description for 'sqs.endpoint'"
+}]}
