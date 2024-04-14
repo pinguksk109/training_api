@@ -18,7 +18,6 @@ public class SqsRepository {
     
     AmazonSQS sqs = AmazonSQSClientBuilder.standard()
         .withCredentials(new DefaultAWSCredentialsProviderChain())
-//        .withEndpointConfiguration(new AwsClientBuilder.EndpointConfiguration(endpoint, "ap-northeast-1")) // リージョンを指定
         .build();
     
     SendMessageRequest sendMessage = new SendMessageRequest().withQueueUrl(queueUrl)

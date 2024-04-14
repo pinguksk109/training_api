@@ -8,8 +8,9 @@ import lombok.Value;
 public class QueueMessageRequest {
 
   private String keyword;
-  private String to;
   private String from;
+  private String to;
+
 
   private static final ObjectMapper MAPPER = new ObjectMapper();
 
