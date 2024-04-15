@@ -53,7 +53,6 @@ public class MessageService {
       dto.add(new QueueResponseDto(request));
     }
 
-    // 送ったメッセージの内容を返却する
     return dto;
   }
 }
