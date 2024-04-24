@@ -1,8 +1,11 @@
 package com.ot.training.presentation.response;
 
 import java.util.List;
+import java.util.stream.Collectors;
 import com.ot.training.application.response.QueueResponseDtos;
+import lombok.Getter;
 
+@Getter
 public class QueueResponseBody {
 
   private List<QueueResponse> dtos;
@@ -12,7 +15,7 @@ public class QueueResponseBody {
    * @param dtos
    */
   public QueueResponseBody(QueueResponseDtos dtos) {
-    dtos.getDto().stream().map(QueueResponse::new).forEach(this.dtos::add);
+    this.dtos = dtos.getDto().stream().map(QueueResponse::new).collect(Collectors.toList());
   }
 
 }

@@ -48,11 +48,9 @@ public class MessageService {
     for (int i = 0; i < TARGET_MONTH; i++) {
       QueueMessageRequest request =
           new QueueMessageRequest(param.getKeywords(), firstDateList.get(i), lastDateList.get(i));
-      // TODO: AmazonSQSExceptionをキャッチする例外処理を実装したい 何をスローするか検討
       sqsRepository.sendMessage(request);
       dto.add(new QueueResponseDto(request));
     }
-
     return dto;
   }
 }
