@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import com.ot.training.application.request.MessageParam;
 import com.ot.training.application.response.KeywordDto;
 import com.ot.training.application.response.QueueResponseDtos;
@@ -12,6 +13,7 @@ import com.ot.training.application.service.MessageService;
 import com.ot.training.application.service.response.QueueResponseDto;
 import com.ot.training.exception.ApiResponseException;
 
+@Service
 public class KeywordCoordinator {
 
   @Autowired

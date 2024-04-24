@@ -24,7 +24,6 @@ public class KeywordController {
     List<QueueResponseDtos> dtosList = keywordCoordinator.sendMessage();
     
     List<QueueResponseBody> responseBodyList = dtosList.stream().map(QueueResponseBody::new).collect(Collectors.toList());
-
     
     return ResponseEntity.ok().body(responseBodyList);
   }
